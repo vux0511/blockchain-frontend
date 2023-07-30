@@ -13,6 +13,14 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
         <link rel="stylesheet" href="./scss/reset.css" />
         <link rel="stylesheet" href="./scss/style.css" />
         <title>Blockchain</title>
@@ -20,36 +28,50 @@
     <body>
         <div class="wrapper">
             <header class="header">
-                <img src="images/logo.png" alt="Logo" class="header__logo" />
-                <form action="" class="header__search">
-                    <input
-                        type="text"
-                        class="header__input"
-                        placeholder="Search"
+                <div class="header__list">
+                    <img
+                        src="images/logo.png"
+                        alt="Logo"
+                        class="header__logo"
                     />
-                    <button class="header__button-search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                <ul class="header__menu">
-                    <li class="header__item">
-                        <a href="#" class="header__link"> Marketplace </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link"> Collections </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link"> Creators </a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link"> Stats </a>
-                    </li>
-                </ul>
-                <div class="header__button">
-                    <a href="#" class="button button-primary">Create</a>
-                    <a href="#" class="button button-primary">Connect Wallet</a>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a href="#" class="header__link"> Marketplace </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link"> Collections </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link"> Creators </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link"> Stats </a>
+                        </li>
+                        <div class="header__icon">
+                            <ion-icon
+                                name="search-outline"
+                                class="header__icon-search"
+                            ></ion-icon>
+                            <ion-icon
+                                name="cart-outline"
+                                class="header__icon-cart"
+                            ></ion-icon>
+                        </div>
+                        <li class="header__item">
+                            <div class="header__button">
+                                <a href="#" class="button button-primary"
+                                    >Create</a
+                                >
+                                <a href="#" class="button button-primary"
+                                    >Connect Wallet</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                    <i class="fa-solid fa-bars-staggered menu-toggle"></i>
                 </div>
             </header>
+
             <section class="banner">
                 <div class="container banner__container">
                     <div class="bannner__info">
@@ -996,5 +1018,7 @@
                 </div>
             </footer>
         </div>
+
+        <script src="app.js"></script>
     </body>
 </html>

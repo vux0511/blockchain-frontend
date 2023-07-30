@@ -176,3 +176,56 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1279.98px) {
+    .button {
+        padding: 12px 15px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        &-primary {
+            margin-left: 10px;
+        }
+        // &-transparent {
+        //     margin: 0 8px;
+        // }
+        &-more {
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .button {
+        padding: 14px 25px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        display: inline-block;
+        &-primary {
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+        &-more {
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .button {
+        padding: 14px 25px;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        &-primary {
+            &:first-child {
+                margin-right: 0px;
+            }
+        }
+        &-more {
+        }
+    }
+}
