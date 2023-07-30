@@ -17,7 +17,7 @@
     &__title {
         padding-bottom: 20px;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
     }
     &__link {
         padding-bottom: 20px;
@@ -45,5 +45,27 @@
         display: flex;
         align-items: center;
         gap: 40px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .footer {
+        padding: 60px 0;
+        padding-bottom: 0;
+        &__list {
+            margin-left: -30px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-left: 30px;
+            width: calc(50% - 30px);
+            margin-bottom: 40px;
+        }
+        &__link {
+            padding-bottom: 20px;
+        }
+        &__social {
+            gap: 20px;
+        }
     }
 }
